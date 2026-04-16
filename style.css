@@ -10,9 +10,17 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background: #0f172a;
+  background: url("assets/img/fondo.jpg") no-repeat center center/cover;
   color: #f8fafc;
   line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* oscurece la imagen */
+  z-index: -1;
 }
 
 a {
@@ -23,7 +31,15 @@ a {
 .hero {
   min-height: 100vh;
   padding: 24px 8%;
-  background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+  background: url("assets/img/fondo.jpg") no-repeat center center/cover;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .navbar {
