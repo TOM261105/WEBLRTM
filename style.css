@@ -355,6 +355,14 @@ a {
   .hero-card {
     margin-top: 10px;
   }
+    .steps {
+    grid-template-columns: 2fr;
+    width: 100%;
+  }
+
+  .step {
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
