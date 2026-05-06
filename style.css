@@ -31,11 +31,11 @@ a {
 
 .hero-logo {
   position: absolute;
-  right: 7%;
-  top: 50%;
+  right: -30%;
+  top: 90%;
   transform: translateY(-50%);
   width: 520px;
-  opacity: 0.07;
+  opacity: 1;
   z-index: 0;
   pointer-events: none;
 }
