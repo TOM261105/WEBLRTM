@@ -24,7 +24,7 @@ a {
 .hero {
   min-height: 100vh;
   padding: 24px 8%;
-  background: #e5e5e5;
+  background: #e6e6e6;
   position: relative;
   overflow: hidden;
 }
@@ -42,6 +42,11 @@ a {
 
 .navbar,
 .hero-content {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-top: 90px;
   position: relative;
   z-index: 2;
 }
@@ -49,11 +54,13 @@ a {
 /* NAV */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 70px;
   flex-wrap: wrap;
   gap: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .nav-links {
