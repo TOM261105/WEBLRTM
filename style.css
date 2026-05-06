@@ -31,8 +31,8 @@ a {
 
 .hero-logo {
   position: absolute;
-  right: -30%;
-  top: 90%;
+  right: 2%;
+  top: 2%;
   transform: translateY(-50%);
   width: 520px;
   opacity: 1;
