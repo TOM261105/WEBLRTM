@@ -56,13 +56,6 @@ a {
   gap: 20px;
 }
 
-.logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #e6007e;
-}
-
 .nav-links {
   display: flex;
   list-style: none;
