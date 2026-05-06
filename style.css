@@ -24,9 +24,17 @@ a {
 .hero {
   min-height: 100vh;
   padding: 24px 8%;
-  background: url("assets/img/LOGOWEB-LRT.jpg") no-repeat center center;
-  background-size: 400px; /* importante */
+  background: #e5e5e5; /* mismo gris del logo */
   position: relative;
+}
+
+.hero-logo {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 350px; /* ajusta tamaño */
+  opacity: 0.15; /* efecto pro */
 }
 
 .hero::before {
