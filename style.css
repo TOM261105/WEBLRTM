@@ -24,7 +24,7 @@ a {
 .hero {
   min-height: 100vh;
   padding: 24px 8%;
-  background: #e6e6e6;
+  background: #d7d7d7;
   position: relative;
   overflow: hidden;
 }
@@ -32,11 +32,10 @@ a {
 .hero-logo {
   position: absolute;
   left: 8%;
-  top: 10%;
-  transform: translateY(-50%);
+  top: 60px;
   width: 260px;
   opacity: 1;
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
 }
 
