@@ -284,23 +284,71 @@ a {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .hero-content,
-  .cards,
-  .benefits,
-  .steps {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-text h1 {
-    font-size: 2.2rem;
+  .hero {
+    padding: 20px 6%;
   }
 
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 25px;
   }
 
   .nav-links {
+    width: 100%;
+    justify-content: center;
     gap: 14px;
+    font-size: 0.95rem;
+  }
+
+  .hero-logo {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    display: block;
+    width: 230px;
+    margin: 20px auto 35px;
+    z-index: 2;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .hero-text p {
+    margin: 0 auto 28px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-card {
+    margin-top: 25px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-logo {
+    width: 200px;
+    margin-top: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.9rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }
