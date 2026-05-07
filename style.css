@@ -320,7 +320,7 @@ a {
     position: static !important;
     transform: none !important;
     display: block;
-    width: 210px;
+    width: 300px;
     margin: 45px auto 35px;
     opacity: 1;
     z-index: 1;
@@ -408,7 +408,7 @@ a {
   }
 
   .hero-logo {
-    width: 190px;
+    width: 280px;
     margin: 40px auto 35px;
   }
 
