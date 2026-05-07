@@ -296,7 +296,7 @@ a {
 @media (max-width: 900px) {
   .hero {
     min-height: auto;
-    padding: 20px 8% 60px;
+    padding: 10px 8% 60px;
   }
 
  .navbar {
@@ -402,8 +402,7 @@ a {
 
 @media (max-width: 500px) {
   .hero {
-    padding: 8px 6% 55px;
-    width: 100%;
+    padding: 2px 6% 55px;
   }
 
   .navbar {
@@ -430,7 +429,7 @@ a {
   }
 
   .hero-logo {
-    width: 280px;
+    width: 300px;
     margin: 14px auto 25px;
   }
 
