@@ -355,6 +355,16 @@ a {
   .hero-card {
     margin-top: 10px;
   }
+
+   .benefit {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .benefit {
+    width: 100%;
+  }
+
     .steps {
     grid-template-columns: 1fr;
     width: 100%;
