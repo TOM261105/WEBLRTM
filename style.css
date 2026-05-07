@@ -356,6 +356,15 @@ a {
     margin-top: 10px;
   }
 
+    .cards {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
    .benefits {
     grid-template-columns: 1fr;
     width: 100%;
@@ -411,5 +420,35 @@ a {
     width: 100%;
     max-width: 280px;
     text-align: center;
+  }
+
+    .cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 22px;
+  }
+
+    .benefits {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .benefits {
+    width: 100%;
+    padding: 22px;
+  }
+
+    .steps {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .step {
+    width: 100%;
+    padding: 22px;
   }
 }
