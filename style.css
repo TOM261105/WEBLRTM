@@ -196,6 +196,20 @@ a {
   background: #d4d4d4;
 }
 
+.titulo-con-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.logo-inline {
+  width: 160px;
+  height: auto;
+  vertical-align: middle;
+}
+
 /* CARDS */
 .cards,
 .benefits {
@@ -544,6 +558,9 @@ a {
   .step {
     width: 100%;
     padding: 22px;
+  }
+  .logo-inline {
+  width: 130px;
   }
 }
 
