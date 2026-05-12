@@ -137,7 +137,7 @@ a {
 }
 
 .btn.primary:hover {
-  background: #c4006b;
+  background: #ff4faf;
   transform: translateY(-2px);
   box-shadow: 0 12px 24px rgba(230, 0, 126, 0.35);
 }
@@ -278,7 +278,7 @@ a {
 }
 
 .portfolio-toggle:hover {
-  background: #c4006b;
+  background: #ff4faf;
   transform: translateY(-2px);
   box-shadow: 0 12px 24px rgba(230, 0, 126, 0.35);
 }
@@ -319,7 +319,7 @@ a {
 }
 
 .portfolio-panel a:hover {
-  background: #e6007e;
+  background: #ff4faf;
   color: #ffffff;
 }
 
@@ -539,5 +539,56 @@ a {
   .step {
     width: 100%;
     padding: 22px;
+  }
+}
+
+@media (hover: none) {
+  .btn:hover,
+  .card:hover,
+  .benefit:hover,
+  .portfolio-toggle:hover,
+  .portfolio-panel a:hover,
+  .nav-links a:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .btn.primary:hover {
+    background: #e6007e;
+  }
+
+  .btn.secondary:hover {
+    background: transparent;
+  }
+
+  .portfolio-toggle:hover {
+    background: #e6007e;
+  }
+
+  .portfolio-panel a:hover {
+    background: #f2f2f2;
+    color: #000000;
+  }
+
+  .nav-links a:hover {
+    color: #000000;
+  }
+
+  .card:hover,
+  .benefit:hover {
+    transform: none;
+  }
+}
+
+@media (hover: none) {
+  .btn:active,
+  .portfolio-toggle:active,
+  .portfolio-panel a:active {
+    transform: scale(0.97);
+  }
+
+  .btn.primary:active,
+  .portfolio-toggle:active {
+    background: #c4006b;
   }
 }
