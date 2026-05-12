@@ -271,7 +271,6 @@ a {
   cursor: pointer;
   transition: 0.3s ease;
   margin-bottom: 24px;
-  box-shadow: 0 8px 18px rgba(230, 0, 126, 0.25);
 }
 
 .portfolio-toggle:hover {
