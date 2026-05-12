@@ -148,7 +148,7 @@ a {
 }
 
 .btn.secondary:hover {
-  background: #c4006b;
+  background: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 12px 24px rgba(230, 0, 126, 0.35);
 }
