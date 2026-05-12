@@ -138,6 +138,8 @@ a {
 
 .btn.primary:hover {
   background: #c4006b;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(230, 0, 126, 0.35);
 }
 
 .btn.secondary {
@@ -146,7 +148,9 @@ a {
 }
 
 .btn.secondary:hover {
-  background: rgba(230, 0, 126, 0.1);
+  background: #c4006b;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(230, 0, 126, 0.35);
 }
 
 /* TARJETA HERO */
