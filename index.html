@@ -181,8 +181,18 @@
   }
 </script>
 
-<a href="https://wa.me/5215564847232?text=Hola%20quiero%20información%20para%20mi%20página%20web" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+<button class="whatsapp-float" onclick="abrirWhatsApp()" aria-label="WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
-</a>
+</button>
+
+<script>
+  function abrirWhatsApp() {
+    window.open(
+      "https://wa.me/5215564847232?text=Hola%20quiero%20información%20para%20mi%20página",
+      "_blank"
+    );
+  }
+</script>
+  
 </body>
 </html>
