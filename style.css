@@ -255,6 +255,58 @@ a {
   margin-bottom: 14px;
 }
 
+/* PORTAFOLIO */
+.portfolio {
+  text-align: center;
+  background: #d1d1d1;
+}
+
+.portfolio-toggle {
+  background: #e6007e;
+  color: #ffffff;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 24px;
+}
+
+.portfolio-toggle:hover {
+  background: #c4006b;
+}
+
+.portfolio-panel {
+  display: none;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.portfolio-panel.active {
+  display: grid;
+  gap: 14px;
+}
+
+.portfolio-panel a {
+  display: block;
+  background: #f2f2f2;
+  color: #000000;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.portfolio-panel a:hover {
+  background: #e6007e;
+  color: #ffffff;
+}
+
 /* CONTACTO */
 .contact {
   text-align: center;
