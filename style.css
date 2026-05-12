@@ -271,25 +271,38 @@ a {
   cursor: pointer;
   transition: 0.3s ease;
   margin-bottom: 24px;
+  box-shadow: 0 8px 18px rgba(230, 0, 126, 0.25);
 }
 
 .portfolio-toggle:hover {
   background: #c4006b;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(230, 0, 126, 0.35);
 }
 
 .portfolio-panel {
-  display: none;
   max-width: 700px;
   margin: 0 auto;
   background: #ffffff;
-  padding: 24px;
+  padding: 0 24px;
   border-radius: 18px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+
+  display: grid;
+  gap: 14px;
+
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height 0.6s ease, opacity 0.4s ease, transform 0.4s ease, padding 0.4s ease;
 }
 
 .portfolio-panel.active {
-  display: grid;
-  gap: 14px;
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  padding: 24px;
 }
 
 .portfolio-panel a {
