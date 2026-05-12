@@ -259,6 +259,10 @@ a {
   margin-bottom: 14px;
 }
 
+.step:hover {
+  transform: translateY(-5px);
+}
+
 /* PORTAFOLIO */
 .portfolio {
   text-align: center;
