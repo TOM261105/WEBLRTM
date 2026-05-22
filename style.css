@@ -360,9 +360,6 @@ a {
   height: auto;
   object-fit: contain;
 
-  opacity: 0.75;
-  filter: grayscale(20%);
-
   transition:
     transform 0.3s ease,
     opacity 0.3s ease,
