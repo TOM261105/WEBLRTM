@@ -306,13 +306,16 @@ a {
   box-shadow: 0 12px 24px rgba(230, 0, 126, 0.35);
 }
 
-.portfolio-panel {
-  max-width: 700px;
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 0 24px;
-  border-radius: 18px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+.portfolio-panel img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+.portfolio-panel img:hover {
+  transform: scale(1.05);
+}
 
   display: grid;
   gap: 14px;
