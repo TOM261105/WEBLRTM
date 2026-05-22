@@ -311,8 +311,10 @@ a {
 /* PANEL */
 .portfolio-panel {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  align-items: center;
+  justify-items: center;
+  gap: 50px;
 
   max-height: 0;
   overflow: hidden;
@@ -339,35 +341,41 @@ a {
   align-items: center;
   justify-content: center;
 
-  background: #9d9d9d; /* más oscuro */
-  border-radius: 18px;
-
-  min-height: 180px;
-  padding: 28px;
+  padding: 20px;
 
   transition: 0.3s ease;
 
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  background: transparent;
 }
 
 /* HOVER */
 .portfolio-panel a:hover {
-  background: #dddddd;
-  transform: translateY(-5px);
+  transform: translateY(-6px) scale(1.05);
 }
 
 /* IMÁGENES */
 .portfolio-panel img {
-  width: 120px;
+  width: 140px;
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  transition: 0.3s ease;
+
+  opacity: 0.75;
+  filter: grayscale(20%);
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    filter 0.3s ease;
 }
 
-.portfolio-panel img:hover {
-  transform: scale(1.05);
+/* HOVER */
+.portfolio-panel a:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.08);
 }
+
 /* CONTACTO */
 .contact {
   text-align: center;
