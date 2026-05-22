@@ -288,26 +288,78 @@ a {
   background: #d1d1d1;
 }
 
+/* BOTÓN */
 .portfolio-toggle {
-  background: #e6007e;
-  color: #e2e2e2;
+  background: #c4006b; /* más oscuro */
+  color: #ffffff;
   border: none;
   padding: 14px 24px;
-  border-radius: 10px;
+  border-radius: 12px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
 .portfolio-toggle:hover {
-  background: #ff4faf;
+  background: #e6007e;
   transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(230, 0, 126, 0.35);
+  box-shadow: 0 12px 24px rgba(230, 0, 126, 0.3);
 }
 
+/* PANEL */
+.portfolio-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+
+  transition:
+    max-height 0.6s ease,
+    opacity 0.4s ease,
+    padding 0.4s ease;
+
+  width: 100%;
+}
+
+/* PANEL ACTIVO */
+.portfolio-panel.active {
+  max-height: 2000px;
+  opacity: 1;
+  padding: 20px 0;
+}
+
+/* TARJETAS */
+.portfolio-panel a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ececec; /* más oscuro */
+  border-radius: 18px;
+
+  min-height: 180px;
+  padding: 28px;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* HOVER */
+.portfolio-panel a:hover {
+  background: #dddddd;
+  transform: translateY(-5px);
+}
+
+/* IMÁGENES */
 .portfolio-panel img {
   width: 120px;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
   transition: 0.3s ease;
@@ -316,39 +368,6 @@ a {
 .portfolio-panel img:hover {
   transform: scale(1.05);
 }
-
-  display: grid;
-  gap: 14px;
-
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: max-height 0.6s ease, opacity 0.4s ease, transform 0.4s ease, padding 0.4s ease;
-}
-
-.portfolio-panel.active {
-  max-height: 500px;
-  opacity: 1;
-  transform: translateY(0);
-  padding: 24px;
-}
-
-.portfolio-panel a {
-  display: block;
-  background: #f2f2f2;
-  color: #000000;
-  padding: 14px;
-  border-radius: 10px;
-  font-weight: 600;
-  transition: 0.3s ease;
-}
-
-.portfolio-panel a:hover {
-  background: #ff4faf;
-  color: #ffffff;
-}
-
 /* CONTACTO */
 .contact {
   text-align: center;
@@ -603,6 +622,16 @@ a {
     height: 52px;
     font-size: 1.8rem;
   }
+
+    .portfolio-panel a {
+    min-height: 140px;
+    padding: 20px;
+  }
+
+  .portfolio-panel img {
+    width: 90px;
+  }
+
 }
 
 @media (hover: none) {
