@@ -311,10 +311,10 @@ a {
 /* PANEL */
 .portfolio-panel {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   align-items: center;
   justify-items: center;
-  gap: 50px;
+  gap: 35px;
 
   max-height: 0;
   overflow: hidden;
@@ -628,13 +628,13 @@ a {
     font-size: 1.8rem;
   }
 
-    .portfolio-panel a {
-    min-height: 140px;
-    padding: 20px;
+ .portfolio-panel {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
 
   .portfolio-panel img {
-    width: 90px;
+    width: 110px;
   }
 
 }
