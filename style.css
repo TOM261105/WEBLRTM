@@ -290,7 +290,7 @@ a {
 
 /* BOTÓN */
 .portfolio-toggle {
-  background: #9d9d9d; /* más oscuro */
+  background: #e6007e; /* más oscuro */
   color: #ffffff;
   border: none;
   padding: 14px 24px;
@@ -339,7 +339,7 @@ a {
   align-items: center;
   justify-content: center;
 
-  background: #ececec; /* más oscuro */
+  background: #9d9d9d; /* más oscuro */
   border-radius: 18px;
 
   min-height: 180px;
