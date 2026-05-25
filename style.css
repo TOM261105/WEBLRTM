@@ -436,6 +436,36 @@ a {
   color: #555555;
 }
 
+/* CAMBIO DE IDIOMA */
+.language-switch {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.language-switch button {
+  border: 1px solid #e6007e;
+  background: transparent;
+  color: #e6007e;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.language-switch button:hover {
+  background: #e6007e;
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .language-switch {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .hero {
