@@ -559,40 +559,50 @@ a {
   box-shadow: 0 18px 35px rgba(230, 0, 126, 0.38);
 }
 
+/* LOGOS DEL PORTAFOLIO SIN CAJA */
 .portfolio-panel {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 42px 70px;
+  gap: 50px 80px;
+
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 0.6s ease, opacity 0.4s ease, padding 0.4s ease;
+
+  transition:
+    max-height 0.6s ease,
+    opacity 0.4s ease,
+    padding 0.4s ease;
+
   width: 100%;
-  max-width: 1050px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .portfolio-panel.active {
   max-height: 2000px;
   opacity: 1;
-  padding: 35px 0 10px;
+  padding: 40px 0 10px;
 }
 
 .portfolio-panel a {
-  flex: 0 1 calc(25% - 70px);
-  max-width: 190px;
-  min-width: 150px;
+  flex: 0 1 calc(25% - 80px);
+  max-width: 260px;
+  min-width: 200px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   padding: 0;
   background: transparent;
   border: none;
   box-shadow: none;
   border-radius: 0;
   overflow: visible;
+
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -601,21 +611,24 @@ a {
 }
 
 .portfolio-panel a:hover {
-  transform: translateY(-5px) scale(1.06);
+  transform: translateY(-6px) scale(1.06);
 }
 
 .portfolio-panel img {
-  width: 165px;
+  width: 230px;
   max-width: 100%;
-  max-height: 90px;
+  max-height: 125px;
   object-fit: contain;
-  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.25));
+
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.35));
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .portfolio-panel a:hover img {
-  transform: scale(1.04);
-  filter: drop-shadow(0 0 12px rgba(230, 0, 126, 0.25)) drop-shadow(0 12px 20px rgba(0, 0, 0, 0.35));
+  transform: scale(1.05);
+  filter:
+    drop-shadow(0 0 14px rgba(230, 0, 126, 0.30))
+    drop-shadow(0 14px 24px rgba(0, 0, 0, 0.42));
 }
 
 /* CONTACTO */
@@ -711,11 +724,18 @@ a {
   }
 
   .portfolio-panel {
-    gap: 38px 52px;
+    gap: 44px 60px;
   }
 
   .portfolio-panel a {
-    flex: 0 1 calc(33.333% - 52px);
+    flex: 0 1 calc(33.333% - 60px);
+    max-width: 240px;
+    min-width: 180px;
+  }
+
+  .portfolio-panel img {
+    width: 210px;
+    max-height: 115px;
   }
 }
 
@@ -783,12 +803,19 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .portfolio-panel {
+    gap: 38px 44px;
+  }
+
   .portfolio-panel a {
-    flex: 0 1 calc(50% - 40px);
+    flex: 0 1 calc(50% - 44px);
+    max-width: 220px;
+    min-width: 150px;
   }
 
   .portfolio-panel img {
-    width: 145px;
+    width: 185px;
+    max-height: 105px;
   }
 }
 
@@ -850,15 +877,18 @@ a {
   }
 
   .portfolio-panel {
-    gap: 32px;
+    gap: 36px;
   }
 
   .portfolio-panel a {
     flex: 0 1 100%;
+    max-width: 260px;
+    min-width: 0;
   }
 
   .portfolio-panel img {
-    width: 150px;
+    width: 200px;
+    max-height: 115px;
   }
 
   .contact-form {
