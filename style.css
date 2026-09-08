@@ -82,11 +82,14 @@ a {
 .hero-logo {
   position: absolute;
   left: 8%;
-  top: 54px;
-  width: 250px;
-  z-index: 2;
+  top: 42px;
+  width: 340px;
+  z-index: 10;
   pointer-events: none;
-  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.28));
+  opacity: 1;
+  filter:
+    drop-shadow(0 0 18px rgba(0, 0, 0, 0.45))
+    drop-shadow(0 10px 24px rgba(0, 0, 0, 0.35));
 }
 
 .navbar,
@@ -773,9 +776,9 @@ a {
     position: static !important;
     transform: none !important;
     display: block;
-    width: 320px;
-    margin: 18px auto 28px;
-    z-index: 1;
+    width: 370px;
+    margin: 18px auto 30px;
+    z-index: 10;
   }
 
   .hero-content {
@@ -842,8 +845,8 @@ a {
   }
 
   .hero-logo {
-    width: 290px;
-    margin: 14px auto 25px;
+    width: 300px;
+    margin: 12px auto 24px;
   }
 
   .hero-text p {
