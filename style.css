@@ -82,7 +82,7 @@ a {
 .hero-logo {
   position: absolute;
   left: 8%;
-  top: 35px;
+  top: 30px;
   width: 340px;
   z-index: 10;
   pointer-events: none;
