@@ -97,9 +97,6 @@ const translations = {
     messagePlaceholder: "Cuéntanos qué tipo de página web necesitas",
 
     sendBtn: "Enviar solicitud",
-    sendingMsg: "Enviando solicitud...",
-    successMsg: "Solicitud enviada correctamente. Te contactaremos pronto.",
-    errorMsg: "Hubo un error al enviar la solicitud. Intenta de nuevo.",
 
     footerText: "© 2026 WEB-LTR. Todos los derechos reservados."
   },
@@ -190,9 +187,6 @@ const translations = {
     messagePlaceholder: "Tell us what type of website you need",
 
     sendBtn: "Send request",
-    sendingMsg: "Sending request...",
-    successMsg: "Request sent successfully. We will contact you soon.",
-    errorMsg: "There was an error sending your request. Please try again.",
 
     footerText: "© 2026 WEB-LTR. All rights reserved."
   }
@@ -224,62 +218,7 @@ function changeLanguage(lang) {
   localStorage.setItem("language", lang);
 }
 
-function setupEmailJS() {
-  const contactForm = document.getElementById("contactForm");
-  const formMessage = document.getElementById("formMessage");
-
-  if (!contactForm || !formMessage) return;
-
-  // CAMBIA ESTOS 3 DATOS POR LOS TUYOS DE EMAILJS
-  const EMAILJS_PUBLIC_KEY = "TU_PUBLIC_KEY";
-  const EMAILJS_SERVICE_ID = "TU_SERVICE_ID";
-  const EMAILJS_TEMPLATE_ID = "TU_TEMPLATE_ID";
-
-  // Aquí pon tu grupo de Zoho, por ejemplo contacto@web-ltr.com
-  const DESTINATION_EMAIL = "contacto@web-ltr.com";
-
-  if (typeof emailjs !== "undefined" && EMAILJS_PUBLIC_KEY !== "TU_PUBLIC_KEY") {
-    emailjs.init({
-      publicKey: EMAILJS_PUBLIC_KEY
-    });
-  }
-
-  contactForm.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const lang = getCurrentLanguage();
-    formMessage.textContent = translations[lang].sendingMsg;
-
-    if (
-      EMAILJS_PUBLIC_KEY === "TU_PUBLIC_KEY" ||
-      EMAILJS_SERVICE_ID === "TU_SERVICE_ID" ||
-      EMAILJS_TEMPLATE_ID === "TU_TEMPLATE_ID"
-    ) {
-      formMessage.textContent = "Faltan las claves de EmailJS en el archivo script.js.";
-      return;
-    }
-
-    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-      nombre: this.nombre.value,
-      email: this.email.value,
-      negocio: this.negocio.value,
-      mensaje: this.mensaje.value,
-      to_email: DESTINATION_EMAIL,
-      reply_to: this.email.value
-    })
-    .then(() => {
-      formMessage.textContent = translations[lang].successMsg;
-      contactForm.reset();
-    })
-    .catch(error => {
-      formMessage.textContent = translations[lang].errorMsg;
-      console.log("EmailJS error:", error);
-    });
-  });
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   const savedLanguage = getCurrentLanguage();
   changeLanguage(savedLanguage);
-  setupEmailJS();
 });
