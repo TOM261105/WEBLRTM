@@ -82,7 +82,7 @@ a {
 .hero-logo {
   position: absolute;
   left: 8%;
-  top: 42px;
+  top: 35px;
   width: 340px;
   z-index: 10;
   pointer-events: none;
@@ -957,18 +957,22 @@ a {
 .footer-brand {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
 .footer-logo {
-  width: 180px;
-  margin-bottom: 18px;
+  width: 200px;
+  margin: 0 auto 22px;
+  display: block;
   filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.28));
 }
 
 .footer-brand p {
-  max-width: 380px;
+  max-width: 520px;
+  margin: 0 auto;
   color: var(--text-soft);
+  text-align: center;
 }
 
 .footer-column h3 {
