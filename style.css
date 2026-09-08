@@ -962,8 +962,8 @@ a {
 }
 
 .footer-logo {
-  width: 200px;
-  margin: 0 auto 22px;
+  width: 140px;
+  margin: 0 auto 18px;
   display: block;
   filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.28));
 }
