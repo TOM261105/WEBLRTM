@@ -99,6 +99,10 @@ const translations = {
     sendBtn: "Enviar solicitud",
 
     footerText: "© 2026 WEB-LTR. Todos los derechos reservados."
+      
+    footerDescription: "Desarrollo web profesional para marcas, emprendedores y negocios que quieren crecer en internet.",
+    footerDirectoryTitle: "Directorio",
+    footerContactTitle: "Contacto",
   },
 
   en: {
@@ -189,6 +193,9 @@ const translations = {
     sendBtn: "Send request",
 
     footerText: "© 2026 WEB-LTR. All rights reserved."
+    footerDescription: "Professional web development for brands, entrepreneurs, and businesses that want to grow online.",
+    footerDirectoryTitle: "Directory",
+    footerContactTitle: "Contact",
   }
 };
 
