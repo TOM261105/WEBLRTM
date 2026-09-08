@@ -35,6 +35,7 @@ const translations = {
     heroCardItem3: "Catálogo o tienda en línea",
     heroCardItem4: "Botón de WhatsApp",
     heroCardItem5: "Optimización básica SEO",
+    heroCardItem6: "Chatbot o chat en vivo",
 
     servicesTitle: "Nuestros servicios",
     servicesIntro: "Soluciones web pensadas para mostrar tu marca de forma profesional y ayudarte a vender más.",
@@ -50,6 +51,9 @@ const translations = {
 
     service4Title: "Rediseño web",
     service4Text: "Mejoramos páginas existentes para que se vean más actuales, funcionen mejor y transmitan mayor confianza.",
+
+    service5Title: "Chatbots para atención al cliente",
+    service5Text: "Integramos chatbots o chats en vivo para que tus clientes puedan resolver dudas, pedir información o contactar a tu negocio de forma rápida.",
 
     stat1: "Proyectos desarrollados",
     stat2: "Diseño responsive",
@@ -128,6 +132,7 @@ const translations = {
     heroCardItem3: "Catalog or online store",
     heroCardItem4: "WhatsApp button",
     heroCardItem5: "Basic SEO optimization",
+    heroCardItem6: "Chatbot or live chat",
 
     servicesTitle: "Our services",
     servicesIntro: "Web solutions designed to present your brand professionally and help you sell more.",
@@ -143,6 +148,9 @@ const translations = {
 
     service4Title: "Website redesign",
     service4Text: "We improve existing websites so they look more current, work better, and build more trust.",
+
+    service5Title: "Customer service chatbots",
+    service5Text: "We integrate chatbots or live chats so your customers can ask questions, request information, or contact your business quickly.",
 
     stat1: "Projects developed",
     stat2: "Responsive design",
