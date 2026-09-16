@@ -626,10 +626,8 @@ a {
 }
 
 .featured-package {
-  border-color: rgba(230, 0, 126, 0.42);
-  box-shadow:
-    0 24px 55px rgba(0,0,0,0.42),
-    0 0 0 1px rgba(230, 0, 126, 0.14);
+  border-color: var(--border);
+  box-shadow: var(--shadow);
 }
 
 .integral-package {
