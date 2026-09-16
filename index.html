@@ -15,7 +15,7 @@
 
   <meta
     name="description"
-    content="WEB-LTR ofrece servicios de desarrollo web moderno, diseño de páginas, landing pages, tiendas en línea, rediseño web y chatbots."
+    content="WEB-LTR ofrece servicios de desarrollo web moderno, diseño de páginas, landing pages, tiendas en línea, rediseño web y automatización de procesos."
   />
 
   <link rel="stylesheet" href="style.css" />
@@ -97,7 +97,7 @@
           <li data-translate="heroCardItem3">Catálogo o tienda en línea</li>
           <li data-translate="heroCardItem4">Botón de WhatsApp</li>
           <li data-translate="heroCardItem5">Optimización básica SEO</li>
-          <li data-translate="heroCardItem6">Chatbot o chat en vivo</li>
+          <li data-translate="heroCardItem6">Automatización de procesos</li>
         </ul>
       </div>
     </div>
@@ -113,7 +113,7 @@
       </p>
 
       <div class="cards">
-        <article class="card">
+        <article class="card service-card" onclick="openServiceModal('landing')">
           <div class="card-icon">
             <i class="fa-solid fa-bullseye"></i>
           </div>
@@ -122,9 +122,11 @@
           <p data-translate="service1Text">
             Páginas enfocadas en convertir visitas en clientes, ideales para campañas, servicios y lanzamientos.
           </p>
+
+          <span class="card-more" data-translate="seeMore">Ver más</span>
         </article>
 
-        <article class="card">
+        <article class="card service-card" onclick="openServiceModal('business')">
           <div class="card-icon">
             <i class="fa-solid fa-display"></i>
           </div>
@@ -133,9 +135,11 @@
           <p data-translate="service2Text">
             Sitios web informativos para presentar tu marca, tus servicios, testimonios y datos de contacto.
           </p>
+
+          <span class="card-more" data-translate="seeMore">Ver más</span>
         </article>
 
-        <article class="card">
+        <article class="card service-card" onclick="openServiceModal('store')">
           <div class="card-icon">
             <i class="fa-solid fa-cart-shopping"></i>
           </div>
@@ -144,9 +148,11 @@
           <p data-translate="service3Text">
             Diseño de e-commerce para vender productos de forma clara, profesional y accesible desde cualquier dispositivo.
           </p>
+
+          <span class="card-more" data-translate="seeMore">Ver más</span>
         </article>
 
-        <article class="card">
+        <article class="card service-card" onclick="openServiceModal('redesign')">
           <div class="card-icon">
             <i class="fa-solid fa-wand-magic-sparkles"></i>
           </div>
@@ -155,17 +161,21 @@
           <p data-translate="service4Text">
             Mejoramos páginas existentes para que se vean más actuales, funcionen mejor y transmitan mayor confianza.
           </p>
+
+          <span class="card-more" data-translate="seeMore">Ver más</span>
         </article>
 
-        <article class="card">
+        <article class="card service-card automation-card" onclick="openServiceModal('automation')">
           <div class="card-icon">
-            <i class="fa-solid fa-robot"></i>
+            <i class="fa-solid fa-gears"></i>
           </div>
 
-          <h3 data-translate="service5Title">Chatbots para atención al cliente</h3>
+          <h3 data-translate="service5Title">Automatización de procesos</h3>
           <p data-translate="service5Text">
-            Integramos chatbots o chats en vivo para que tus clientes puedan resolver dudas, pedir información o contactar a tu negocio de forma rápida.
+            Creamos flujos automáticos para que tu negocio ahorre tiempo, responda más rápido y mantenga organizada la información de tus clientes.
           </p>
+
+          <span class="card-more" data-translate="seeMore">Ver más</span>
         </article>
       </div>
     </section>
@@ -435,6 +445,21 @@
       <p data-translate="footerText">© 2026 WEB-LTR. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <div class="service-modal" id="serviceModal">
+    <div class="service-modal-content">
+      <button class="service-modal-close" type="button" onclick="closeServiceModal()" aria-label="Cerrar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="service-modal-icon" id="serviceModalIcon">
+        <i class="fa-solid fa-circle-info"></i>
+      </div>
+
+      <h2 id="serviceModalTitle">Servicio</h2>
+      <div id="serviceModalBody"></div>
+    </div>
+  </div>
 
   <button class="whatsapp-float" type="button" onclick="abrirWhatsApp()" aria-label="WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
