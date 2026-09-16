@@ -35,7 +35,7 @@ const translations = {
     heroCardItem3: "Catálogo o tienda en línea",
     heroCardItem4: "Botón de WhatsApp",
     heroCardItem5: "Optimización básica SEO",
-    heroCardItem6: "Chatbot o chat en vivo",
+    heroCardItem6: "Automatización de procesos",
 
     servicesTitle: "Nuestros servicios",
     servicesIntro: "Soluciones web pensadas para mostrar tu marca de forma profesional y ayudarte a vender más.",
@@ -52,8 +52,10 @@ const translations = {
     service4Title: "Rediseño web",
     service4Text: "Mejoramos páginas existentes para que se vean más actuales, funcionen mejor y transmitan mayor confianza.",
 
-    service5Title: "Chatbots para atención al cliente",
-    service5Text: "Integramos chatbots o chats en vivo para que tus clientes puedan resolver dudas, pedir información o contactar a tu negocio de forma rápida.",
+    service5Title: "Automatización de procesos",
+    service5Text: "Creamos flujos automáticos para que tu negocio ahorre tiempo, responda más rápido y mantenga organizada la información de tus clientes.",
+
+    seeMore: "Ver más",
 
     stat1: "Proyectos desarrollados",
     stat2: "Diseño responsive",
@@ -132,7 +134,7 @@ const translations = {
     heroCardItem3: "Catalog or online store",
     heroCardItem4: "WhatsApp button",
     heroCardItem5: "Basic SEO optimization",
-    heroCardItem6: "Chatbot or live chat",
+    heroCardItem6: "Process automation",
 
     servicesTitle: "Our services",
     servicesIntro: "Web solutions designed to present your brand professionally and help you sell more.",
@@ -149,8 +151,10 @@ const translations = {
     service4Title: "Website redesign",
     service4Text: "We improve existing websites so they look more current, work better, and build more trust.",
 
-    service5Title: "Customer service chatbots",
-    service5Text: "We integrate chatbots or live chats so your customers can ask questions, request information, or contact your business quickly.",
+    service5Title: "Process automation",
+    service5Text: "We create automated workflows so your business saves time, responds faster, and keeps customer information organized.",
+
+    seeMore: "See more",
 
     stat1: "Projects developed",
     stat2: "Responsive design",
@@ -206,6 +210,212 @@ const translations = {
   }
 };
 
+const serviceDetails = {
+  es: {
+    landing: {
+      icon: "fa-solid fa-bullseye",
+      title: "Landing Pages",
+      body: `
+        <p>Una landing page es una página enfocada en un objetivo específico: vender, captar clientes, promocionar un servicio o presentar una campaña.</p>
+        <p>Es ideal para negocios que quieren dirigir a sus clientes a una sola acción clara, como pedir una cotización, mandar WhatsApp, registrarse o conocer un producto.</p>
+        <ul>
+          <li>Diseño visual profesional y adaptado a celular.</li>
+          <li>Secciones enfocadas en conversión.</li>
+          <li>Botones de contacto, WhatsApp o formulario.</li>
+          <li>Información clara sobre el servicio o producto.</li>
+          <li>Optimización básica para que cargue rápido y se vea bien.</li>
+        </ul>
+      `
+    },
+
+    business: {
+      icon: "fa-solid fa-display",
+      title: "Páginas para negocios",
+      body: `
+        <p>Este servicio está pensado para marcas, empresas o emprendedores que necesitan una página web completa para presentar quiénes son, qué hacen y cómo pueden ser contactados.</p>
+        <p>Funciona como una carta de presentación profesional disponible las 24 horas.</p>
+        <ul>
+          <li>Inicio, acerca de, servicios, portafolio y contacto.</li>
+          <li>Diseño alineado a la identidad visual de la marca.</li>
+          <li>Información ordenada para generar confianza.</li>
+          <li>Integración con WhatsApp, correo, redes sociales o formularios.</li>
+          <li>Versión responsive para celular, tablet y computadora.</li>
+        </ul>
+      `
+    },
+
+    store: {
+      icon: "fa-solid fa-cart-shopping",
+      title: "Tiendas en línea",
+      body: `
+        <p>Desarrollamos tiendas digitales para negocios que quieren mostrar y vender productos de forma clara, profesional y accesible.</p>
+        <p>Dependiendo del proyecto, se puede crear un catálogo visual, una tienda conectada a una plataforma de pagos o una tienda administrable para el cliente.</p>
+        <ul>
+          <li>Catálogo de productos organizado por categorías.</li>
+          <li>Páginas individuales de producto.</li>
+          <li>Botones de compra, cotización o WhatsApp.</li>
+          <li>Diseño responsive para que el cliente pueda comprar desde celular.</li>
+          <li>Estructura pensada para facilitar la navegación y la venta.</li>
+        </ul>
+      `
+    },
+
+    redesign: {
+      icon: "fa-solid fa-wand-magic-sparkles",
+      title: "Rediseño web",
+      body: `
+        <p>El rediseño web sirve para negocios que ya tienen una página, pero sienten que se ve antigua, desordenada, poco profesional o no funciona bien en celular.</p>
+        <p>Mejoramos la estructura, el diseño visual, la experiencia del usuario y la presentación general de la marca.</p>
+        <ul>
+          <li>Actualización visual de la página.</li>
+          <li>Mejora de distribución, textos y secciones.</li>
+          <li>Adaptación a dispositivos móviles.</li>
+          <li>Corrección de detalles que afectan la navegación.</li>
+          <li>Mayor claridad para que el cliente entienda y contacte más rápido.</li>
+        </ul>
+      `
+    },
+
+    automation: {
+      icon: "fa-solid fa-gears",
+      title: "Automatización de procesos",
+      body: `
+        <p>La automatización permite que ciertas tareas digitales se realicen de forma automática, ayudando a que el negocio ahorre tiempo, responda más rápido y reduzca errores.</p>
+        <p>Puede conectar formularios, correos, bases de datos, WhatsApp, reportes, herramientas de ventas, chatbots y procesos internos.</p>
+
+        <div class="service-levels">
+          <div class="service-level">
+            <h3>Nivel 1: Automatización básica</h3>
+            <p>Automatizaciones simples como enviar un correo cuando alguien llena un formulario, guardar datos en Google Sheets o abrir WhatsApp con un mensaje prellenado.</p>
+          </div>
+
+          <div class="service-level">
+            <h3>Nivel 2: Automatización intermedia</h3>
+            <p>Conecta varias herramientas al mismo tiempo. Por ejemplo: formulario web → base de datos → correo automático al cliente → notificación interna al negocio.</p>
+          </div>
+
+          <div class="service-level">
+            <h3>Nivel 3: Automatización avanzada</h3>
+            <p>El sistema responde de manera diferente según la información del cliente. Por ejemplo, si pide una tienda en línea recibe cierta información, y si pide una landing page recibe otra.</p>
+          </div>
+
+          <div class="service-level">
+            <h3>Nivel 4: Automatización con inteligencia artificial</h3>
+            <p>Integra IA para responder dudas, clasificar mensajes, resumir solicitudes, ordenar prospectos o apoyar la atención inicial al cliente.</p>
+          </div>
+
+          <div class="service-level">
+            <h3>Nivel 5: Automatización integral del negocio</h3>
+            <p>Crea un flujo completo conectado: página web → formulario → chatbot → base de datos → correo → WhatsApp → reporte → seguimiento comercial.</p>
+          </div>
+        </div>
+      `
+    }
+  },
+
+  en: {
+    landing: {
+      icon: "fa-solid fa-bullseye",
+      title: "Landing Pages",
+      body: `
+        <p>A landing page is a website focused on one specific goal: selling, generating leads, promoting a service, or presenting a campaign.</p>
+        <p>It is ideal for businesses that want to guide visitors toward one clear action, such as requesting a quote, sending a WhatsApp message, registering, or learning about a product.</p>
+        <ul>
+          <li>Professional visual design adapted to mobile devices.</li>
+          <li>Sections focused on conversion.</li>
+          <li>Contact, WhatsApp, or form buttons.</li>
+          <li>Clear information about the service or product.</li>
+          <li>Basic optimization for fast loading and good presentation.</li>
+        </ul>
+      `
+    },
+
+    business: {
+      icon: "fa-solid fa-display",
+      title: "Business websites",
+      body: `
+        <p>This service is designed for brands, companies, or entrepreneurs that need a complete website to present who they are, what they do, and how they can be contacted.</p>
+        <p>It works as a professional online presentation available 24/7.</p>
+        <ul>
+          <li>Home, about, services, portfolio, and contact sections.</li>
+          <li>Design aligned with the brand identity.</li>
+          <li>Organized information to build trust.</li>
+          <li>Integration with WhatsApp, email, social media, or forms.</li>
+          <li>Responsive version for mobile, tablet, and desktop.</li>
+        </ul>
+      `
+    },
+
+    store: {
+      icon: "fa-solid fa-cart-shopping",
+      title: "Online stores",
+      body: `
+        <p>We develop digital stores for businesses that want to show and sell products in a clear, professional, and accessible way.</p>
+        <p>Depending on the project, we can create a visual catalog, a store connected to a payment platform, or a manageable store for the client.</p>
+        <ul>
+          <li>Product catalog organized by categories.</li>
+          <li>Individual product pages.</li>
+          <li>Purchase, quote, or WhatsApp buttons.</li>
+          <li>Responsive design so customers can shop from mobile devices.</li>
+          <li>Structure designed to make navigation and sales easier.</li>
+        </ul>
+      `
+    },
+
+    redesign: {
+      icon: "fa-solid fa-wand-magic-sparkles",
+      title: "Website redesign",
+      body: `
+        <p>Website redesign is for businesses that already have a website but feel it looks outdated, disorganized, unprofessional, or does not work well on mobile.</p>
+        <p>We improve the structure, visual design, user experience, and overall brand presentation.</p>
+        <ul>
+          <li>Visual update of the website.</li>
+          <li>Improved layout, content, and sections.</li>
+          <li>Mobile device adaptation.</li>
+          <li>Fixes for details that affect navigation.</li>
+          <li>More clarity so customers understand and contact faster.</li>
+        </ul>
+      `
+    },
+
+    automation: {
+      icon: "fa-solid fa-gears",
+      title: "Process automation",
+      body: `
+        <p>Automation allows certain digital tasks to happen automatically, helping the business save time, respond faster, and reduce errors.</p>
+        <p>It can connect forms, emails, databases, WhatsApp, reports, sales tools, chatbots, and internal processes.</p>
+
+        <div class="service-levels">
+          <div class="service-level">
+            <h3>Level 1: Basic automation</h3>
+            <p>Simple automations such as sending an email when someone fills out a form, saving data to Google Sheets, or opening WhatsApp with a pre-filled message.</p>
+          </div>
+
+          <div class="service-level">
+            <h3>Level 2: Intermediate automation</h3>
+            <p>Connects several tools at the same time. For example: web form → database → automatic email to the client → internal notification to the business.</p>
+          </div>
+
+          <div class="service-level">
+            <h3>Level 3: Advanced automation</h3>
+            <p>The system responds differently depending on the customer's information. For example, if they request an online store they receive one type of information, and if they request a landing page they receive another.</p>
+          </div>
+
+          <div class="service-level">
+            <h3>Level 4: AI-powered automation</h3>
+            <p>Integrates AI to answer questions, classify messages, summarize requests, organize leads, or support initial customer service.</p>
+          </div>
+
+          <div class="service-level">
+            <h3>Level 5: Full business automation</h3>
+            <p>Creates a complete connected flow: website → form → chatbot → database → email → WhatsApp → report → sales follow-up.</p>
+          </div>
+        </div>
+      `
+    }
+  }
+};
+
 function getCurrentLanguage() {
   return localStorage.getItem("language") || "es";
 }
@@ -232,7 +442,42 @@ function changeLanguage(lang) {
   localStorage.setItem("language", lang);
 }
 
+function openServiceModal(serviceKey) {
+  const lang = getCurrentLanguage();
+  const service = serviceDetails[lang][serviceKey];
+
+  if (!service) return;
+
+  document.getElementById("serviceModalIcon").innerHTML = `<i class="${service.icon}"></i>`;
+  document.getElementById("serviceModalTitle").textContent = service.title;
+  document.getElementById("serviceModalBody").innerHTML = service.body;
+
+  document.getElementById("serviceModal").classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeServiceModal() {
+  document.getElementById("serviceModal").classList.remove("active");
+  document.body.style.overflow = "";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const savedLanguage = getCurrentLanguage();
   changeLanguage(savedLanguage);
+
+  const modal = document.getElementById("serviceModal");
+
+  if (modal) {
+    modal.addEventListener("click", event => {
+      if (event.target === modal) {
+        closeServiceModal();
+      }
+    });
+  }
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      closeServiceModal();
+    }
+  });
 });
