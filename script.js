@@ -13,6 +13,7 @@ function abrirWhatsApp() {
 const translations = {
   es: {
     navServices: "Servicios",
+    navPackages: "Paquetes",
     navProcess: "Proceso",
     navBenefits: "Beneficios",
     navWork: "Nuestro trabajo",
@@ -56,6 +57,63 @@ const translations = {
     service5Text: "Creamos flujos automáticos para que tu negocio ahorre tiempo, responda más rápido y mantenga organizada la información de tus clientes.",
 
     seeMore: "Ver más",
+
+    packagesTitle: "Paquetes aproximados",
+    packagesIntro: "Cada proyecto se adapta a las necesidades del negocio. Estos paquetes sirven como referencia inicial para darte una idea del alcance y la inversión.",
+
+    packageBtn: "Cotizar paquete",
+
+    package1Label: "Básico",
+    package1Title: "Presencia Digital",
+    package1Price: "Desde $8,000 MXN",
+    package1Monthly: "Mantenimiento desde $800 MXN / mes",
+    package1Description: "Ideal para emprendedores, marcas personales o negocios que quieren empezar a verse profesionales en internet.",
+    package1Item1: "Landing page profesional",
+    package1Item2: "Diseño responsive",
+    package1Item3: "Formulario de contacto",
+    package1Item4: "Botón de WhatsApp",
+
+    package2Label: "Profesional",
+    package2Title: "Página Profesional",
+    package2Price: "Desde $14,000 MXN",
+    package2Monthly: "Mantenimiento desde $1,200 MXN / mes",
+    package2Description: "Ideal para negocios que necesitan una página completa para presentar su marca, servicios y generar confianza.",
+    package2Item1: "Sitio web completo",
+    package2Item2: "Inicio, servicios, acerca de y contacto",
+    package2Item3: "Diseño personalizado",
+    package2Item4: "Enlaces a redes y formulario",
+
+    package3Label: "Más recomendado",
+    package3Title: "Página + Automatización",
+    package3Price: "Desde $18,000 MXN",
+    package3Monthly: "Soporte desde $1,800 MXN / mes",
+    package3Description: "Ideal para negocios que quieren ahorrar tiempo, responder más rápido y organizar mejor sus solicitudes.",
+    package3Item1: "Página web profesional",
+    package3Item2: "Formulario automatizado",
+    package3Item3: "Correo automático al cliente",
+    package3Item4: "Registro de datos y notificación interna",
+
+    package4Label: "E-commerce",
+    package4Title: "Página + Tienda / Catálogo",
+    package4Price: "Desde $35,000 MXN",
+    package4Monthly: "Soporte desde $2,500 MXN / mes",
+    package4Description: "Ideal para marcas que venden productos y quieren mostrarlos de forma clara, profesional y ordenada.",
+    package4Item1: "Página web completa",
+    package4Item2: "Catálogo o tienda en línea",
+    package4Item3: "Categorías de productos",
+    package4Item4: "Fichas de producto y botones de compra",
+
+    package5Label: "Integral",
+    package5Title: "Sistema Digital Integral",
+    package5Price: "Desde $60,000 MXN",
+    package5Monthly: "Soporte integral desde $5,000 MXN / mes",
+    package5Description: "Ideal para negocios que quieren una solución completa para vender, captar clientes y automatizar procesos.",
+    package5Item1: "Página web completa",
+    package5Item2: "Tienda o catálogo",
+    package5Item3: "Automatización de formularios o pedidos",
+    package5Item4: "Base de datos, seguimiento y reportes básicos",
+
+    packagesNote: "*Los precios mostrados son aproximados. El precio final se determina después de realizar una cotización personalizada con WEB-LTR, de acuerdo con el alcance, número de secciones, productos, idiomas, integraciones, automatizaciones, plataformas externas y nivel de personalización solicitado.",
 
     stat1: "Proyectos desarrollados",
     stat2: "Diseño responsive",
@@ -112,6 +170,7 @@ const translations = {
 
   en: {
     navServices: "Services",
+    navPackages: "Packages",
     navProcess: "Process",
     navBenefits: "Benefits",
     navWork: "Our work",
@@ -155,6 +214,63 @@ const translations = {
     service5Text: "We create automated workflows so your business saves time, responds faster, and keeps customer information organized.",
 
     seeMore: "See more",
+
+    packagesTitle: "Estimated packages",
+    packagesIntro: "Each project is adapted to the needs of the business. These packages serve as an initial reference to give you an idea of the scope and investment.",
+
+    packageBtn: "Request a quote",
+
+    package1Label: "Basic",
+    package1Title: "Digital Presence",
+    package1Price: "Starting at $8,000 MXN",
+    package1Monthly: "Maintenance from $800 MXN / month",
+    package1Description: "Ideal for entrepreneurs, personal brands, or businesses that want to start looking professional online.",
+    package1Item1: "Professional landing page",
+    package1Item2: "Responsive design",
+    package1Item3: "Contact form",
+    package1Item4: "WhatsApp button",
+
+    package2Label: "Professional",
+    package2Title: "Professional Website",
+    package2Price: "Starting at $14,000 MXN",
+    package2Monthly: "Maintenance from $1,200 MXN / month",
+    package2Description: "Ideal for businesses that need a complete website to present their brand, services, and build trust.",
+    package2Item1: "Complete website",
+    package2Item2: "Home, services, about, and contact",
+    package2Item3: "Custom design",
+    package2Item4: "Social links and form",
+
+    package3Label: "Most recommended",
+    package3Title: "Website + Automation",
+    package3Price: "Starting at $18,000 MXN",
+    package3Monthly: "Support from $1,800 MXN / month",
+    package3Description: "Ideal for businesses that want to save time, respond faster, and better organize their requests.",
+    package3Item1: "Professional website",
+    package3Item2: "Automated form",
+    package3Item3: "Automatic email to the client",
+    package3Item4: "Data registration and internal notification",
+
+    package4Label: "E-commerce",
+    package4Title: "Website + Store / Catalog",
+    package4Price: "Starting at $35,000 MXN",
+    package4Monthly: "Support from $2,500 MXN / month",
+    package4Description: "Ideal for brands that sell products and want to display them clearly, professionally, and in an organized way.",
+    package4Item1: "Complete website",
+    package4Item2: "Catalog or online store",
+    package4Item3: "Product categories",
+    package4Item4: "Product pages and purchase buttons",
+
+    package5Label: "Full solution",
+    package5Title: "Full Digital System",
+    package5Price: "Starting at $60,000 MXN",
+    package5Monthly: "Full support from $5,000 MXN / month",
+    package5Description: "Ideal for businesses that want a complete solution to sell, attract customers, and automate processes.",
+    package5Item1: "Complete website",
+    package5Item2: "Store or catalog",
+    package5Item3: "Form or order automation",
+    package5Item4: "Database, follow-up, and basic reports",
+
+    packagesNote: "*The prices shown are approximate. The final price is determined after a personalized quote with WEB-LTR, according to the scope, number of sections, products, languages, integrations, automations, external platforms, and level of customization requested.",
 
     stat1: "Projects developed",
     stat2: "Responsive design",
