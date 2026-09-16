@@ -486,6 +486,159 @@ a {
   }
 }
 
+/* PAQUETES */
+.packages-section {
+  background:
+    radial-gradient(circle at 85% 10%, rgba(230, 0, 126, 0.10), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.005));
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.package-card {
+  padding: 30px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, var(--bg-card), var(--bg-card-dark));
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.package-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, rgba(230, 0, 126, 0.08), transparent 42%);
+  pointer-events: none;
+}
+
+.package-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(0,0,0,0.42);
+  border-color: rgba(230, 0, 126, 0.28);
+}
+
+.package-label {
+  width: fit-content;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(230, 0, 126, 0.14);
+  color: var(--accent-2);
+  border: 1px solid rgba(230, 0, 126, 0.28);
+  font-size: 0.78rem;
+  font-weight: 900;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.package-card h3 {
+  color: #ffffff;
+  font-size: 1.28rem;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.package-price {
+  color: #ffffff;
+  font-size: 1.55rem;
+  font-weight: 900;
+  margin-bottom: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+.package-monthly {
+  color: var(--accent-2);
+  font-weight: 800;
+  font-size: 0.96rem;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.package-description {
+  color: var(--text-soft);
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.package-card ul {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.package-card li {
+  color: var(--text-soft);
+  padding-left: 24px;
+  position: relative;
+}
+
+.package-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-2);
+  font-weight: 900;
+}
+
+.package-btn {
+  margin-top: auto;
+  width: fit-content;
+  padding: 12px 18px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #ffffff;
+  font-weight: 900;
+  box-shadow: 0 12px 24px rgba(230, 0, 126, 0.24);
+  transition: 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.package-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(230, 0, 126, 0.34);
+}
+
+.featured-package {
+  border-color: rgba(230, 0, 126, 0.42);
+  box-shadow:
+    0 24px 55px rgba(0,0,0,0.42),
+    0 0 0 1px rgba(230, 0, 126, 0.14);
+}
+
+.integral-package {
+  grid-column: 1 / -1;
+}
+
+.packages-note {
+  max-width: 1050px;
+  margin: 28px auto 0;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
 /* ESTADISTICAS */
 .stats-section {
   padding-top: 40px;
@@ -949,6 +1102,14 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .integral-package {
+    grid-column: 1 / -1;
+  }
+
   .portfolio-panel {
     gap: 44px 60px;
   }
@@ -1045,6 +1206,27 @@ a {
 @media (max-width: 700px) {
   .steps {
     grid-template-columns: 1fr;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .integral-package {
+    grid-column: auto;
+  }
+
+  .package-card {
+    padding: 24px;
+  }
+
+  .package-price {
+    font-size: 1.35rem;
+  }
+
+  .packages-note {
+    font-size: 0.74rem;
+    text-align: left;
   }
 
   .portfolio-panel {
@@ -1191,6 +1373,8 @@ a {
   .btn:hover,
   .card:hover,
   .benefit:hover,
+  .package-card:hover,
+  .package-btn:hover,
   .portfolio-toggle:hover,
   .portfolio-panel a:hover,
   .nav-links a:hover,
@@ -1201,7 +1385,8 @@ a {
   }
 
   .btn.primary:hover,
-  .portfolio-toggle:hover {
+  .portfolio-toggle:hover,
+  .package-btn:hover {
     background: linear-gradient(135deg, var(--accent), var(--accent-2));
   }
 
